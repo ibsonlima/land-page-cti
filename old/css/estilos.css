@@ -1,0 +1,26 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+/* Estilos */
+
+body {
+    /* background: rgb(187, 125, 58); */
+    /* background: linear-gradient(90deg, rgba(187, 125, 58, 1) 0%, rgba(245, 217, 133, 1) 50%, rgba(209, 161, 85, 1) 100%); */
+}
+
+footer {
+    background: green;
+    height: 55px;
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+footer div:nth-child(1) a {
+    text-align: left;
+    color: #FFF;
+}
+
+footer div:nth-child(2) {
+    text-align: right;
+    color: #FFF;
+}

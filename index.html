@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link href="css/estilos.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script>
+        $(document).ready(function () {
+            $("#unidade").selectmenu({
+                change: function (event, data) {
+                    $("#hide_unidade").val(data.item.value);
+                }
+            });
+        });    
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="lead">
+                    <h3>Imóvel em recifedesocupado?</h3>
+
+                    <form id="formLead" class="form-lead" action="obrigado.php" method="post">
+                        <span class="legenda">Os tempos ruins chegaram ao fim! Em até 60 dias, garantimos a locação do
+                            seu imóvel no padrão #DESAFIOCTI. Forneça seus
+                            dados que um de nossos especialistas entrará em contato. Não perca mais tempo e alugue já o
+                            seu imóvel desocupado!</span>
+                        <div class="form-group">
+                            <span class="input-icon">
+                                <input id="nome" name="nome" class="form-control" placeholder="NOME COMPLETO"
+                                    required="" value="" type="text">
+
+                            </span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <span class="input-icon">
+                                <input id="email" name="email" class="form-control" placeholder="EMAIL" required=""
+                                    value="" type="email">
+
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="input-icon">
+                                <input id="phone" name="phone" class="form-control fone" placeholder="TELEFONE"
+                                    required="" value="" type="text">
+
+                            </span>
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <span class="input-icon">
+                                        <input id="hide_unidade" name="hide_unidade" type="hidden" value="Boa Viagem">
+                                        <select name="unidade" id="unidade">
+                                            <option selected="selected">Unidade</option>
+                                            <option>Hi Tamarineira</option>
+                                            <option>Hi Espinheiro</option>
+                                            <option>Hi Boa Viagem 2</option>
+                                            <option>Hi Boa Viagem 3</option>
+
+                                        </select>
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-group ">
+                                    <span class="input-icon">
+                                        <input id="bairro" name="bairro" class="form-control fone"
+                                            placeholder="BAIRRO DO IMÓVEL" required="" value="" type="text">
+
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <button id="buttonCadastro" class="btn btn-primary">SOLICITAR CONTATO</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/esculdo_60_dias.png" alt="">
+            </div>
+
+
+            <div class="col-md-4"> img </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6"> <a href="#">Regulamento da Promoção</a> </div>
+                <div class="col-md-6"> <a href="#"> CTI IMOBILIARIA - Todos os direitos reservados.</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#unidade").selectmenu({
+            change: function (event, data) {
+                $("#hide_unidade").val(data.item.value);
+            }
+        });
+    });    
+</script>
+
+</html>
